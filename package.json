@@ -2,7 +2,13 @@
   "name": "@gtkatakura/eslint-config-base",
   "version": "1.0.0",
   "main": "index.js",
+  "repository": "https://github.com/gtkatakura/eslint-config-base.git",
+  "author": "gtkatakura <gt.katakura@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
   "dependencies": {
     "eslint-config-airbnb": "17.1.0",
     "eslint-plugin-import": "2.14.0",
