@@ -1,5 +1,5 @@
 {
-  "name": "eslint-config-base",
+  "name": "@gtkatakura/eslint-config-base",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
