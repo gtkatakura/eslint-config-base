@@ -1,5 +1,6 @@
 module.exports = {
-  extends: "airbnb",
+  extends: ["airbnb", "plugin:unicorn/recommended"],
+  plugins: ["unicorn", "import-helpers"],
   rules: {
     "arrow-parens": "off",
     "import/prefer-default-export": "off",
@@ -15,6 +16,17 @@ module.exports = {
     "object-curly-newline": "off",
     "react/jsx-filename-extension": "off",
     "react/no-multi-comp": "off",
-    semi: ["error", "never"]
+    semi: ["error", "never"],
+    "import-helpers/order-imports": [
+      "error",
+      {
+        newlinesBetween: "always",
+        groups: ["/^react/", "module", ["parent", "sibling", "index"]],
+        alphabetize: {
+          order: "asc",
+          ignoreCase: true
+        }
+      }
+    ]
   }
 };
